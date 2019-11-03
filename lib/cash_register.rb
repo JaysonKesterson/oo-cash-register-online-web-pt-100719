@@ -18,7 +18,7 @@ class CashRegister
   def apply_discount
     binding.pry
     discount = @discount
-    discountpct = (discount/100)
+    discountpct = (100/100)
     moneysaved = (@total)
     @total = (@total - @total*(discount/100))
     "After the discount, the total comes to $#{@total}"
