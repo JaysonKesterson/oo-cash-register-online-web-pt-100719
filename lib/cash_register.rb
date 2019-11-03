@@ -1,3 +1,4 @@
+require 'pry'
 class CashRegister
   
   attr_accessor :total
@@ -15,6 +16,7 @@ class CashRegister
   end 
   
   def apply_discount
+    binding.pry
     discountpct = (@discount/100)
     moneysaved = (@total)
     @total = (@total - @total*(discount/100))
